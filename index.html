@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .row{
+            display: flex;
+        }
+
+        .col{
+            padding: 0 10px;
+        }
+        canvas{
+            border: 1px solid black;
+        }
+        .black-70{
+            color: rgba(0, 0, 0, .7);
+        }
+        .btn-red{
+            background-color: red;
+        }
+        .btn-green{
+            background-color: green;
+        }
+        .btn-blue{
+            background-color: blue;
+        }
+        .btn-orange{
+            background-color: orange;
+        }
+        button{
+            border: none;
+            border-radius: 1rem;
+            padding: .5rem 1rem;
+            color: white;
+            transition: all .5s ease;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: black;
+        }
+
+        .clear{
+            margin-top: 20px;
+        }
+
+        .btn-clear{
+            background-color: black;
+            transition: all .5s ease;
+        }
+        .btn-clear:hover{
+            background-color: rgb(227, 242, 255);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="col">
+                <h1>Let's Draw Something That <br> Makes You Happy</h3>
+                <p class="black-70">Draw anything that you can imagine, lets bring your brigth ideas <br> The limit is your imagination</p>
+                <div class="change-color">
+                    <h2>Want to change some colors ?</h2>
+                    <div class="colors">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn-red">Red</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn-green">Green</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn-blue">Blue</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn-orange">Orange</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear">
+                    <div class="col">
+                        <button class="btn-clear">Clear All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
